@@ -1,0 +1,2 @@
+DC=Afdelinger,DC=kursus24,DC=com
+Egon,Ejermand,egej,Passw0rd,@kursus24,leder
