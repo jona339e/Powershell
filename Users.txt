@@ -1,2 +1,17 @@
-DC=Afdelinger,DC=kursus24,DC=com
-Egon,Ejermand,egej,Passw0rd,@kursus24,leder
+OU=Afdelinger,DC=kursus23,DC=com
+Egon,Ejermand,egej,Passw0rd,@kursus24,Ledelse
+Palle,Pengepuger,pape,Passw0rd,@kursus24,Oekonomi
+Jens,Jyde,jejy,Passw0rd,@kursus24,Bogholderi
+Ole,Opfinder,olop,Passw0rd,@kursus24,Bogholderi
+Inger,Ingenpenge,inin,Passw0rd,@kursus24,Loen
+Sten,Sparemand,stsp,Passw0rd,@kursus24,Loen
+Vanessa,Vedingenting,vave,Passw0rd,@kursus24,Kursus
+Susanne,Saetisoe,suse,Passw0rd,@kursus24,Marketing
+Bent,Bogorm,bebo,Passw0rd,@kursus24,Laererteam
+Hugo,Hemmingsloes,huhe,Passw0rd,@kursus24,Laererteam
+Claus,Cludder,clcl,Passw0rd,@kursus24,Laererteam
+Steen,Stopovanski,stst,Passw0rd,@kursus24,Administration
+Soeren,Supernoerd,sosu,Passw0rd,@kursus24,IT
+Niels,Naesvis,nina,Passw0rd,@kursus24,Kundeservice
+Soeren,Styrpaating,sost,Passw0rd,@kursus24,HR
+Palle,Pilfinger,papi,Passw0rd,@kursus24,IT Helpdesk
