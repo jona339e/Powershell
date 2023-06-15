@@ -1,0 +1,15 @@
+$parentOUPath = Get-Content -Path Users.txt -TotalCount 1
+
+$users = Import-Csv -Path Users.txt -Delimiter "," -Header "Firstname", "Lastname", "Username", "Password", "DomainMail", "OUName" | Select-Object -Skip 1
+
+foreach ($user in $users) {
+    $firstname = $user.Firstname
+    $lastname = $user.Lastname
+    $username = $user.Username
+    $password = ConvertTo-SecureString -String $user.Password -AsPlainText -Force
+    $domainMail = $user.DomainMail
+    $ouName = $user.OUName
+    $ouPath = "DC=$ouName,$parentOUPath"
+
+    New-ADUser -SamAccountName $username -GivenName $firstName -Surname $lastName -UserPrincipalName "$username@$domainMail" -Name "$firstname $lastname" -Enabled $true -PasswordNeverExpires $true -AccountPassword $password -Path $ouPath
+}
