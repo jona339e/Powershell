@@ -1,0 +1,14 @@
+DC=KURSUS23,DC=com
+Afdelinger
+Ledelse
+Oekonomi
+Bogholderi
+Loen
+Kursus
+Marketing
+Laererteam
+Administration
+IT
+Kunderservice
+HR
+IT Helpdesk
