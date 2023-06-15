@@ -1,4 +1,4 @@
-DC=KURSUS23,DC=com
+DC=kursus23,DC=com
 Afdelinger
 Ledelse
 Oekonomi
@@ -12,3 +12,4 @@ IT
 Kundeservice
 HR
 IT Helpdesk
+Chefer

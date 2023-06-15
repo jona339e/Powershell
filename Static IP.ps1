@@ -1,5 +1,6 @@
-New-NetIPAddress –IPAddress 169.254.122.23 -DefaultGateway 169.254.122.1 -PrefixLength 24 -InterfaceIndex (Get-NetAdapter).InterfaceIndex
+$DNS = "169.254.122.23"
+New-NetIPAddress �IPAddress 169.254.122.23 -DefaultGateway 169.254.122.1 -PrefixLength 24 -InterfaceIndex (Get-NetAdapter).InterfaceIndex
 
+$InterfaceAlias = (Get-NetIPInterface | Where-Object {$_.InterfaceAlias -like "*Ethernet*"}).InterfaceAlias
 
-Get-DnsClientServerAddress
-Set-DNSClientServerAddress "Ethernet" –ServerAddresses ("169.254.1.157", "")
+Set-DnsClientServerAddress -InterfaceAlias $InterfaceAlias -ServerAddresses $DNS
