@@ -14,7 +14,7 @@ foreach ($user in $users) {
     $ouPath = "OU=$ouName,$parentOUPath"
 
 
-    New-ADUser -GivenName $firstname -Surname $lastname -SamAccountName $username -AccountPassword $password -UserPrincipalName $username$domainMail -name "$firstname$lastname" -Enabled $true -PasswordNeverExpires $true -Path $ouPath
+    New-ADUser -GivenName $firstname -Surname $lastname -SamAccountName $username -AccountPassword $password -UserPrincipalName $username$domainMail -name "$firstname $lastname" -Enabled $true -PasswordNeverExpires $true -Path $ouPath
 
 
 
