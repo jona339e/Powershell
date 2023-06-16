@@ -2,7 +2,7 @@
 $folderPath = "C:\Afdelinger"
 
 # Set the share name
-$shareName = "SharedFolder2"
+$shareName = "Afdelinger"
 
 # Set the share description
 $shareDescription = "Shared folder for authenticated users"
