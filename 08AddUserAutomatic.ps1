@@ -1,7 +1,7 @@
 ﻿$parentOUPath = Get-Content -Path Users.txt -TotalCount 1
 
 
-$users = Import-Csv -Path Users.txt -Delimiter "," -Header "Firstname", "Lastname", "Username", "Password", "DomainMail", "OUName" | Select-Object -Skip 1
+$users = Import-Csv -Path 07Users.txt -Delimiter "," -Header "Firstname", "Lastname", "Username", "Password", "DomainMail", "OUName" | Select-Object -Skip 1
 
 
 foreach ($user in $users) {
