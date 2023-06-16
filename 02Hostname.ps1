@@ -1,1 +1,1 @@
-Rename-Computer -ComputerName WIN-MMTLC86H5C6 -NewName DC1-23 -Restart
+Rename-Computer -NewName DC1-23 -Restart
