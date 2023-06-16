@@ -12,7 +12,7 @@ New-ADGroup -Name "DL_Chefer" -GroupScope DomainLocal -GroupCategory Security -P
 
 
 
-$users = Get-Content Chefer.txt
+$users = Get-Content 12Chefer.txt
 
 Add-ADGroupMember -Identity "DL_Chefer" -Members "G_Chefer"
 
