@@ -19,8 +19,6 @@ New-ADOrganizationalUnit -name $line -ProtectedFromAccidentalDeletion $false -Pa
 }
 
 
-﻿#Grupper
-
 $rootDN = "DC=kursus23,DC=com"
 
 
