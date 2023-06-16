@@ -1,5 +1,15 @@
-﻿
-Import-Module ActiveDirectory
+﻿Import-Module ActiveDirectory
+
+
+
+
+
+New-ADGroup -Name "G_Chefer" -GroupScope Global -GroupCategory Security -Path "OU=GlobalGrupper,OU=Grupper,DC=kursus23,DC=com"
+
+New-ADGroup -Name "DL_Chefer" -GroupScope DomainLocal -GroupCategory Security -Path "OU=DomainLocalGrupper,OU=Grupper,DC=kursus23,DC=com"
+
+
+
 
 
 $users = Get-Content Chefer.txt

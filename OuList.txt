@@ -12,4 +12,3 @@ IT
 Kundeservice
 HR
 IT Helpdesk
-Chefer
