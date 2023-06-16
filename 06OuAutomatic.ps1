@@ -1,9 +1,9 @@
 
-$importFile = (Get-Content OuList.txt) | Select-Object -skip 2
+$importFile = (Get-Content 05OuList.txt) | Select-Object -skip 2
 
-$domainName = Get-Content OuList.txt | Select -first 1
+$domainName = Get-Content 05OuList.txt | Select -first 1
 
-$name = (Get-Content OuList.txt)[1]
+$name = (Get-Content 05OuList.txt)[1]
 
 New-ADOrganizationalUnit -name $name -ProtectedFromAccidentalDeletion $false
 
