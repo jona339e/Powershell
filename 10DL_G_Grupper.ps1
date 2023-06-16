@@ -1,8 +1,8 @@
 ﻿Import-Module ActiveDirectory
 
-$importFile = Get-Content OuList.txt | Select-Object -Skip 2
+$importFile = Get-Content 05OuList.txt | Select-Object -Skip 2
 
-$domainName = Get-Content OuList.txt | Select -first 1
+$domainName = Get-Content 05OuList.txt | Select -first 1
 
 $fullPath = "OU=Grupper,$domainName"
 
