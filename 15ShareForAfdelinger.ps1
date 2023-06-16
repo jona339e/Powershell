@@ -15,7 +15,3 @@ $null = New-SmbShare -Name $shareName -Path $folderPath -Description $shareDescr
 
 # Remove "Everyone" from the share permissions
 $null = Get-SmbShareAccess -Name $shareName | Where-Object { $_.AccountName -eq $usernameToRemove } 
-
-# Display completion message
-Write-Output "Share created and permissions updated successfully!"
-Pause
